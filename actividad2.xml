@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE empresa [
+    <!ELEMENT empresa (departamento+)>
+
+    <!ATTLIST empresa nombre CDATA #REQUIRED>
+    <!ATTLIST empresa fechaCreacion CDATA #REQUIRED>
+
+    <!ELEMENT departamento (nombre, empleados)>
+    <!ATTLIST departamento id CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+
+    <!ELEMENT empleados (empleado+)>
+    <!ELEMENT empleado (cargo, salario, direccion, proyectos)>
+    <!ATTLIST empleado id CDATA #REQUIRED>
+    <!ATTLIST empleado nombre CDATA #REQUIRED>
+    <!ATTLIST empleado fechaContratacion CDATA #REQUIRED>
+
+    <!ELEMENT cargo (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+
+    <!ELEMENT direccion (calle, ciudad, pais)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+
+    <!ELEMENT proyectos (proyecto+)>
+    <!ELEMENT proyecto>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+
+    <!ATTLIST proyecto nombre CDATA #REQUIRED>
+    <!ATTLIST proyecto fechaInicio CDATA #REQUIRED>
+]>
+
+<empresa nombre="Tech Innovators" fechaCreacion="2024-09-15">
+    <departamento id="D001">
+        <nombre>Desarrollo</nombre>
+        <empleados>
+            <empleado id="E001" nombre="Laura Sánchez" fechaContratacion="2015-06-23">
+                <cargo>Desarrollador Senior</cargo>
+                <salario>50000</salario>
+                <direccion>
+                    <calle>Avenida Central 123</calle>
+                    <ciudad>Madrid</ciudad>
+                    <pais>España</pais>
+                </direccion>
+                <proyectos>
+                    <proyecto nombre="Sistema de Gestión" fechaInicio="2023-01-15"/>
+                    <proyecto nombre="Aplicación Móvil" fechaInicio="2023-07-01"/>
+                </proyectos>
+            </empleado>
+            <empleado id="E002" nombre="Carlos Gómez" fechaContratacion="2018-11-12">
+                <nombre>Carlos Gómez</nombre>
+                <cargo>Desarrollador Junior</cargo>
+                <salario>35000</salario>
+                <direccion>
+                    <calle>Calle de la Luna 456</calle>
+                    <ciudad>Barcelona</ciudad>
+                    <pais>España</pais>
+                </direccion>
+                <proyectos>
+                    <proyecto nombre="Web Corporativa" fechaInicio="2023-02-20"/>
+                </proyectos>
+            </empleado>
+        </empleados>
+    </departamento>
+
+    <departamento id="D002">
+        <nombre>Marketing</nombre>
+        <empleados>
+            <empleado id="E003" nombre="Ana Martínez" fechaContratacion="2016-03-18">
+                <cargo>Especialista en SEO</cargo>
+                <salario>42000</salario>
+                <direccion>
+                    <calle>Calle del Mar 789</calle>
+                    <ciudad>Valencia</ciudad>
+                    <pais>España</pais>
+                </direccion>
+                <proyectos>
+                    <proyecto nombre="Campaña SEO 2023" fechaInicio="2023-05-01"/>
+                </proyectos>
+            </empleado>
+            <empleado id="E004" nombre="Luis Fernández" fechaContratacion="2019-10-30">
+                <cargo>Analista de Mercado</cargo>
+                <salario>47000</salario>
+                <direccion>
+                    <calle>Calle del Río 101</calle>
+                    <ciudad>Sevilla</ciudad>
+                    <pais>España</pais>
+                </direccion>
+                <proyectos>
+                    <proyecto nombre="Estudio de Mercado 2024" fechaInicio="2024-01-15"/>
+                </proyectos>
+            </empleado>
+        </empleados>
+    </departamento>
+    <departamento id="D003" nombre="Recursos Humanos">
+        <nombre>Recursos Humanos</nombre>
+        <empleados>
+            <empleado id="E005" nombre="Sofía Ruiz" fechaContratacion="2020-07-22">
+                <cargo>Gerente de RRHH</cargo>
+                <salario>55000</salario>
+                <direccion>
+                    <calle>Calle de la Paz 202</calle>
+                    <ciudad>Granada</ciudad>
+                    <pais>España</pais>
+                </direccion>
+                <proyectos>
+                    <proyecto nombre="Optimización de Procesos" fechaInicio="2024-03-01"/>
+                        <nombre>
+                        <fechaInicio>
+                    <proyecto nombre="Evaluación de Desempeño" fechaInicio="2024-04-15"/>
+                </proyectos>
+            </empleado>
+        </empleados>
+    </departamento>
+</empresa>

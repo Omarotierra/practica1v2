@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE 702-isw [
+    <!ELEMENT 702-isw (estudiante+)>
+    <!ELEMENT estudiante (nombre_completo, edad)>
+    <!ELEMENT nombre_completo (nombre, apellido_paterno, apellido_materno)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido_paterno (#PCDATA)>
+    <!ELEMENT apellido_materno (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ATTLIST estudiante matricula ID #REQUIRED>
+]>
+
+<702-isw>
+    <estudiante matricula="zs21004477">
+        <nombre_completo>
+            <nombre>Omar</nombre>
+            <apellido_paterno>Hernández</apellido_paterno>
+            <apellido_materno>Hernández</apellido_materno>
+        </nombre_completo>
+        <edad>21</edad>
+    </estudiante>
+
+    <estudiante matricula="zs21020563">
+        <nombre_completo> 
+            <nombre>Jose Francisco</nombre>
+            <apellido_paterno>Garcia</apellido_paterno>
+            <apellido_materno>Alonso</apellido_materno>
+        </nombre_completo>
+        <edad>23</edad>>
+    </estudiante>
+
+    <estudiante matricula="zs21020562">
+        <nombre_completo> 
+            <nombre>Johan David</nombre>
+            <apellido_paterno>Baltazar</apellido_paterno>
+            <apellido_materno>Trinidad</apellido_materno>
+        </nombre_completo>
+        <edad>22</edad>
+    </estudiante>
+
+     <estudiante id="zs21004533">
+        <nombre_completo> 
+            <nombre>Erick</nombre>
+            <apellido_paterno>Barrena</apellido_paterno>
+            <apellido_materno>Gonzalez</apellido_materno>
+        </nombre_completo>
+        <edad>23</edad>
+    </estudiante>
+
+     <estudiante id="zs21004533">
+        <nombre_completo> 
+            <nombre>Erick</nombre>
+            <apellido_paterno>Barrena</apellido_paterno>
+            <apellido_materno>Gonzalez</apellido_materno>
+        </nombre_completo>
+        <edad>23</edad>
+    </estudiante>
+
+    <estudiante id="zs21004511">
+        <nombre_completo> 
+            <nombre>Christian Fernando</nombre>
+            <apellido_paterno>Flores</apellido_paterno>
+            <apellido_materno>Ramirez</apellido_materno>
+        </nombre_completo>
+        <edad>23</edad>
+    </estudiante>
+
+<estudiante id="zs21004534">
+    <nombre_completo> 
+        <nombre>Carlos Ehytram</nombre>
+        <apellido_paterno>Gutierrez</apellido_paterno>
+        <apellido_materno>Votte</apellido_materno>
+    </nombre_completo>
+    <edad></edad> 
+</estudiante>
+
+<estudiante id="zs21020564">
+    <nombre_completo> 
+        <nombre>Melissa Marlene</nombre>
+        <apellido_paterno>Juarez</apellido_paterno>
+        <apellido_materno>Brenis</apellido_materno>
+    </nombre_completo>
+    <edad></edad> 
+</estudiante>
+
+<estudiante id="zs21004482">
+    <nombre_completo> 
+        <nombre>Jose Emmanuel</nombre>
+        <apellido_paterno>Martinez</apellido_paterno>
+        <apellido_materno>Rivera</apellido_materno>
+    </nombre_completo>
+    <edad></edad> 
+</estudiante>
+
+<estudiante id="zs21004506">
+    <nombre_completo> 
+        <nombre>Emilio Enrique</nombre>
+        <apellido_paterno>Rafael</apellido_paterno>
+        <apellido_materno>De Jesus</apellido_materno>
+    </nombre_completo>
+    <edad></edad> 
+</estudiante>
+
+<estudiante id="zs21004509">
+    <nombre_completo> 
+        <nombre>Miguel Angel</nombre>
+        <apellido_paterno>Rivera</apellido_paterno>
+        <apellido_materno>Flores</apellido_materno>
+    </nombre_completo>
+    <edad></edad>
+</estudiante>
+
+<estudiante id="zs21004524">
+    <nombre_completo> 
+        <nombre>Luis Enrique</nombre>
+        <apellido_paterno>Romero</apellido_paterno>
+        <apellido_materno>Perez</apellido_materno>
+    </nombre_completo>
+    <edad></edad>
+</estudiante>
+
+<estudiante id="zs21020566">
+    <nombre_completo> 
+        <nombre>Bernardo</nombre>
+        <apellido_paterno>Rosas</apellido_paterno>
+        <apellido_materno>Moto</apellido_materno>
+    </nombre_completo>
+    <edad></edad> 
+</estudiante>
+
+<estudiante id="zs21004479">
+    <nombre_completo> 
+        <nombre>Jesus Gerardo</nombre>
+        <apellido_paterno>Solano</apellido_paterno>
+        <apellido_materno>Victoria</apellido_materno>
+    </nombre_completo>
+    <edad></edad> 
+</estudiante>
+
+<estudiante id="zs21004525">
+    <nombre_completo> 
+        <nombre>Salvador</nombre>
+        <apellido_paterno>Vega</apellido_paterno>
+        <apellido_materno>Villegas</apellido_materno>
+    </nombre_completo>
+    <edad></edad> 
+</estudiante>
+
+</702-isw>
